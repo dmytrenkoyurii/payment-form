@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Form</title> <!--Заголовок для пошукових систем-->
+	<meta charset="UTF-8"> <!--Формат перетворення Юнікоду-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Всегда использует последний доступный стандартный режим отображения-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Типичный сайт, оптимизированный для мобильных устройств-->
+	<link rel="stylesheet" type="text/css" href="style.css"/> <!--Стилі-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet"> <!-- Шрифт -->
+	<link rel="icon" href="favicon.png"/> <!--Іконка сайту-->
+</head>
+<body>
+	<div class="card">
+		<div class="form">
+			<div class="form__head">
+				<p class="form__title">Harold Finch</p>
+				<p class="form__subtitle">Your total</p>
+				<p class="form__price">88</p>
+			</div>
+			<form class="form__pay">
+				<label class="form__label">Credit card number<br>
+					<input class="form__card--input" type="text" name="card" required>
+				</label><br>
+				<label class="form__label">Expiration date<br>
+					<select class="form__month--input" name="month" required>
+						<option value="" disabled selected>Month</option>
+						<option value="January">January</option>
+						<option value="February">February</option>
+						<option value="March">March</option>
+						<option value="April">April</option>
+						<option value="May">May</option>
+						<option value="June">June</option>
+						<option value="July">July</option>
+						<option value="August">August</option>
+						<option value="September">September</option>
+						<option value="October">October</option>
+						<option value="November">November</option>
+						<option value="December">December</option>
+					</select>
+					<select class="form__year--input" name="year" required>
+						<option value="" disabled selected>Year</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+						<option value="2022">2023</option>
+						<option value="2022">2024</option>
+					</select>
+				</label><br>
+				<label class="form__label">CVV<br>
+					<input class="form__cvv--input" type="text" min="3" max="4" required>
+					<p class="form__cvv--info">3 or 4 digits - <a class="form__cvv--a" href="#">view example</a></p>
+				</label>
+				<hr>
+				<input class="form__button--pay" type="submit" name="submit" value="Pay">
+				<input class="form__button--cancel" type="submit" name="cancel" value="Cancel order">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
